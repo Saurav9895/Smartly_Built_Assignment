@@ -9,11 +9,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
 }
 
 .container {
-  border: 1px solid #929191;
   width: 100%;
   max-width: 400px;
   overflow: hidden;
@@ -22,6 +20,7 @@ body {
 .noborder {
   border: none;
 }
+
 .grid {
   display: grid;
   gap: 10px;
@@ -32,24 +31,24 @@ body {
 .item {
   height: 20px;
 }
+
 .bordered {
   border: 1px solid #b3aeb2;
+}
+
+.bordered-none {
   border-bottom: none;
 }
-.bordered-top {
-  border-top: 1px solid #b3aeb2;
+.border-none-side {
+  border-left: none;
+  border-right: none;
 }
+
 .section-one {
   padding: 0 10px;
 }
 
-.background-pink {
-  background-color: #f9dbdb;
-}
-
-.background-grey {
-  background-color: #afadae;
-}
+.background-grey,
 .second-container .item,
 .fourth-container .item,
 .section-three .item {
@@ -60,21 +59,27 @@ body {
   background-color: #f9dbdb;
 }
 
-.second-container {
-  padding: 10px;
-  margin-top: 10px;
+.mt-neg5 {
+  margin-top: -5px;
 }
-.third-container {
-  grid-template-columns: repeat(13, 1fr);
-  padding-top: 20px;
+.mt-neg6 {
+  margin-top: -6px;
 }
-.fourth-container {
-  padding: 13px 10px 0;
+.mt-3 {
+  margin-top: 3px;
 }
-.section-three {
-  grid-template-columns: repeat(12, 1fr);
-  padding: 3px 0;
+
+.mt25 {
+  margin-top: 25px;
 }
+
+.pt {
+  padding: 20px 10px 0 10px;
+}
+
+/* ======================
+   Section Specific Layouts
+====================== */
 
 /* First container */
 .first-container {
@@ -95,12 +100,13 @@ body {
 .first-item4 {
   grid-column: 6/8;
   height: 12px;
-  margin-top: -5px;
 }
 
 /* Second container */
 .second-container {
   grid-template-columns: repeat(12, 1fr);
+  padding: 10px;
+  margin-top: 10px;
 }
 .second-item1 {
   grid-column: 1/4;
@@ -119,7 +125,6 @@ body {
 .second-item4 {
   grid-column: 1/4;
   height: 10px;
-  margin-top: 8px;
 }
 .second-item5 {
   grid-column: 4/13;
@@ -128,7 +133,6 @@ body {
 .second-item6 {
   grid-column: 4/8;
   height: 8px;
-  margin-top: -6px;
 }
 .second-item7 {
   grid-column: 4/8;
@@ -141,6 +145,9 @@ body {
 }
 
 /* Third container */
+.third-container {
+  grid-template-columns: repeat(13, 1fr);
+}
 .third-item1 {
   grid-column: 1/4;
   height: 14px;
@@ -156,7 +163,6 @@ body {
 .third-item4 {
   grid-column: 12/14;
   height: 7px;
-  /* background-color: #afadae; */
 }
 
 /* Fourth container */
@@ -174,22 +180,18 @@ body {
 .fourth-item3 {
   grid-column: 1/3;
   height: 8px;
-  margin-top: 6px;
 }
 .fourth-item4 {
   grid-column: 1/11;
   height: 22px;
-  margin-top: -6px;
 }
 .fourth-item5 {
   grid-column: 11/13;
   height: 22px;
-  margin-top: -6px;
 }
 .fourth-item6 {
   grid-column: 1/6;
   height: 7px;
-  margin-top: -6px;
 }
 .fourth-item7 {
   grid-column: 1/13;
@@ -202,17 +204,15 @@ body {
 .fourth-item9 {
   grid-column: 1/11;
   height: 22px;
-  margin-top: -6px;
 }
 .fourth-item10 {
   grid-column: 11/13;
   height: 10px;
-  margin-top: 25px;
+  grid-row: 8;
 }
 .fourth-item11 {
   grid-column: 3/13;
   height: 22px;
-  margin-top: -3px;
 }
 .fourth-item12 {
   grid-column: 1/3;
@@ -221,9 +221,13 @@ body {
 .fourth-item13 {
   grid-column: 1/11;
   height: 22px;
-  margin-top: -6px;
 }
 
+/* Section three */
+.section-three {
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 3px;
+}
 .fifth-item1 {
   grid-column: 1/4;
   height: 6px;
@@ -233,6 +237,9 @@ body {
   height: 6px;
 }
 
+/* ======================
+   Responsive
+====================== */
 @media (max-width: 300px) {
   .first-container,
   .second-container,
@@ -242,12 +249,12 @@ body {
   }
   .grid {
     max-width: 100%;
-    box-sizing: border-box;
   }
   .container {
     overflow-x: hidden;
   }
 
+  /* First container */
   .first-item1 {
     grid-column: 1/6;
   }
@@ -264,6 +271,7 @@ body {
     grid-row: 4;
   }
 
+  /* Second container */
   .second-item1 {
     grid-column: 1/5;
     grid-row: 1;
@@ -277,12 +285,11 @@ body {
   }
   .second-item4 {
     grid-column: 1/5;
-    margin-top: 0px;
     grid-row: 3;
   }
   .second-item5 {
-    grid-row: 3;
     grid-column: 5/13;
+    grid-row: 3;
   }
   .second-item6 {
     grid-column: 5/11;
@@ -294,15 +301,12 @@ body {
     grid-column: 5/9;
   }
 
+  /* Third container */
   .grid3 {
     gap: 0;
   }
-  .third-item1 {
-    grid-column: 1/6;
-  }
-  .third-item2 {
-    grid-column: 1/6;
-  }
+  .third-item1,
+  .third-item2,
   .third-item3 {
     grid-column: 1/6;
   }
@@ -310,9 +314,8 @@ body {
     grid-column: 10/14;
   }
 
-  .fourth-item1 {
-    grid-column: 1/7;
-  }
+  /* Fourth container */
+  .fourth-item1,
   .fourth-item2 {
     grid-column: 1/7;
   }
