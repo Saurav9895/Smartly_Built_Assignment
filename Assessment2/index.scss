@@ -75,8 +75,8 @@ body {
 .mt-neg5 {
   margin-top: -5px;
 }
-.mt-neg6 {
-  margin-top: -6px;
+.mt-neg3 {
+  margin-top: -3px;
 }
 .mt-3 {
   margin-top: 3px;
@@ -266,11 +266,15 @@ body {
 .third-container {
   grid-template-columns: repeat(13, 1fr);
 
-  .tab-text-in {
-    font-size: 13px;
-    color: $text-dark;
-    text-decoration: none;
+  button {
+    background: none;
+    border: none;
     padding: 5px 0px;
+    a {
+      font-size: 13px;
+      color: $text-dark;
+      text-decoration: none;
+    }
   }
   .tab-flex {
     display: flex;
@@ -304,6 +308,35 @@ body {
 .fourth-container {
   grid-template-columns: repeat(12, 1fr);
   padding-bottom: 30px;
+
+  .msg-arr-left {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      width: 12px;
+      height: 12px;
+      background-color: $msg-box;
+      transform: rotate(45deg);
+    }
+  }
+  .msg-arr-right {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      width: 12px;
+      height: 12px;
+      background-color: $msg-box;
+      transform: rotate(45deg);
+    }
+  }
 
   .display-f-c {
     display: flex;
@@ -377,7 +410,6 @@ body {
     span {
       font-size: 12px;
       color: $text-dark;
-      // margin-right: 5px;
       text-decoration: none;
     }
   }
@@ -427,6 +459,7 @@ body {
       padding: 8px;
     }
   }
+
   .fourth-item10 {
     grid-column: 9/13;
     grid-row: 8;
@@ -446,12 +479,14 @@ body {
   }
   .fourth-item11 {
     grid-column: 4/13;
+
     p {
       font-size: 14px;
       color: $msg-text;
       padding: 8px;
     }
   }
+
   .fourth-item12 {
     grid-column: 1/5;
 
@@ -469,6 +504,7 @@ body {
   }
   .fourth-item13 {
     grid-column: 1/10;
+
     p {
       font-size: 14px;
       color: $msg-text;

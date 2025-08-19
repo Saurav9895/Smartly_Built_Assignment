@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Chat Message with Arrow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        padding: 20px;
+      }
+
+      .fourth-item9 {
+        position: relative;
+        background-color: #e3e8ff;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: -6px; /* Creates overlap for the arrow effect */
+      }
+
+      .fourth-item9::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 10px;
+        width: 12px;
+        height: 12px;
+        background-color: #e3e8ff;
+        transform: rotate(45deg);
+      }
+
+      .fourth-item9 p {
+        font-size: 14px;
+        color: #2c3e50;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">Single Chat Message</div>
+      <div class="chat-messages">
+        <!-- The specific message structure requested -->
+        <div class="item fourth-item8">
+          <p>(508) 555-1234</p>
+          <span>Today</span>
+        </div>
+        <div class="item fourth-item9 mt-neg6 msg-box-bg-color">
+          <p>
+            OMG - I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

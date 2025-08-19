@@ -62,8 +62,8 @@ body {
   margin-top: -5px;
 }
 
-.mt-neg6 {
-  margin-top: -6px;
+.mt-neg3 {
+  margin-top: -3px;
 }
 
 .mt-3 {
@@ -245,11 +245,15 @@ body {
 .third-container {
   grid-template-columns: repeat(13, 1fr);
 }
-.third-container .tab-text-in {
+.third-container button {
+  background: none;
+  border: none;
+  padding: 5px 0px;
+}
+.third-container button a {
   font-size: 13px;
   color: #333333;
   text-decoration: none;
-  padding: 5px 0px;
 }
 .third-container .tab-flex {
   display: flex;
@@ -279,6 +283,32 @@ body {
 .fourth-container {
   grid-template-columns: repeat(12, 1fr);
   padding-bottom: 30px;
+}
+.fourth-container .msg-arr-left {
+  position: relative;
+}
+.fourth-container .msg-arr-left::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #e5e5e5;
+  transform: rotate(45deg);
+}
+.fourth-container .msg-arr-right {
+  position: relative;
+}
+.fourth-container .msg-arr-right::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #e5e5e5;
+  transform: rotate(45deg);
 }
 .fourth-container .display-f-c {
   display: flex;
