@@ -2,6 +2,7 @@ $border-color: #b3aeb2;
 $grey: #afadae;
 $text-dark: #333333;
 $text-light: #797979;
+$text-light-msg-dial: #bebdbd;
 $text-2nd-box-dark: #303030;
 $text-btn: #414141;
 $msg-text: #424141;
@@ -74,6 +75,10 @@ body {
 
 .mt-neg5 {
   margin-top: -5px;
+}
+
+.mt-neg8 {
+  margin-top: -8px;
 }
 .mt-neg3 {
   margin-top: -3px;
@@ -176,8 +181,7 @@ body {
 
     a {
       text-align: center;
-      font-size: 14px;
-      // text-decoration: underline;
+      font-size: 12px;
       color: $text-dark;
     }
   }
@@ -194,6 +198,7 @@ body {
       font-size: 17px;
       color: $text-2nd-box-dark;
       text-align: right;
+      font-weight: 500;
     }
   }
   .second-item2 {
@@ -219,6 +224,7 @@ body {
       font-size: 17px;
       color: $text-2nd-box-dark;
       text-align: right;
+      font-weight: 500;
     }
   }
   .second-item5 {
@@ -239,10 +245,16 @@ body {
     button {
       width: 100%;
       padding: 10px;
-      font-size: 13px;
+      // font-size: 13px;
       background-color: $btn-color;
       cursor: pointer;
-      color: $text-btn;
+      // color: $text-btn;
+
+      P {
+        font-size: 13px;
+        font-weight: bold;
+        color: $text-btn;
+      }
     }
   }
   .second-item8 {
@@ -269,9 +281,12 @@ body {
   button {
     background: none;
     border: none;
+    width: 100%;
+    cursor: pointer;
     padding: 5px 0px;
+
     a {
-      font-size: 13px;
+      font-size: 11px;
       color: $text-dark;
       text-decoration: none;
     }
@@ -338,6 +353,32 @@ body {
     }
   }
 
+  .msg-dial-right {
+    p {
+      font-size: 14px;
+      color: $text-dark;
+      font-weight: bold;
+      font-style: italic;
+    }
+    span {
+      font-size: 14px;
+      color: $text-light-msg-dial;
+      margin-left: 10px;
+    }
+  }
+  .msg-dial-left {
+    p {
+      font-size: 14px;
+      color: $text-dark;
+      font-weight: bold;
+    }
+    span {
+      font-size: 14px;
+      color: $text-light-msg-dial;
+      margin-left: 10px;
+    }
+  }
+
   .display-f-c {
     display: flex;
     align-items: center;
@@ -356,7 +397,7 @@ body {
     }
     a {
       font-size: 11px;
-      color: $text-dark;
+      color: $text-light;
       margin-left: 5px;
       text-decoration: underline;
     }
@@ -379,6 +420,7 @@ body {
     p {
       font-size: 14px;
       color: $text-dark;
+      font-weight: 500;
     }
   }
   .fourth-item4 {
@@ -437,18 +479,6 @@ body {
   }
   .fourth-item8 {
     grid-column: 1/5;
-
-    p {
-      font-size: 14px;
-      color: $text-dark;
-      font-weight: bold;
-    }
-
-    span {
-      font-size: 14px;
-      color: $text-light;
-      margin-left: 10px;
-    }
   }
   .fourth-item9 {
     grid-column: 1/10;
@@ -464,18 +494,6 @@ body {
     grid-column: 9/13;
     grid-row: 8;
     justify-content: end;
-
-    p {
-      font-size: 14px;
-      color: $text-dark;
-      font-weight: bold;
-      font-style: italic;
-    }
-    span {
-      font-size: 14px;
-      color: $text-light;
-      margin-left: 10px;
-    }
   }
   .fourth-item11 {
     grid-column: 4/13;
@@ -489,18 +507,6 @@ body {
 
   .fourth-item12 {
     grid-column: 1/5;
-
-    p {
-      font-size: 14px;
-      color: $text-dark;
-      font-weight: bold;
-    }
-
-    span {
-      font-size: 14px;
-      color: $text-light;
-      margin-left: 10px;
-    }
   }
   .fourth-item13 {
     grid-column: 1/10;
@@ -556,7 +562,7 @@ body {
 
 .sec-tab-m-c-sec {
   .phone-number {
-    font-size: 12px;
+    font-size: 11px;
     color: $text-dark;
     font-weight: bold;
     text-decoration: underline;
@@ -564,7 +570,7 @@ body {
   }
 
   .msg-count {
-    font-size: 12px;
+    font-size: 11px;
     color: $text-light;
 
     text-align: right;
@@ -573,7 +579,7 @@ body {
 
 .sec-tab-msg {
   p {
-    font-size: 14px;
+    font-size: 11px;
     color: $text-dark;
     line-height: 20px;
   }
