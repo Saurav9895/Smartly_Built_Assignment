@@ -134,6 +134,12 @@ body {
   grid-row: 12;
 }
 
+.tab-no-bdr-btm {
+  z-index: 1;
+  position: relative;
+  bottom: -1px;
+}
+
 // ======================
 // Section Specific Layouts
 // ======================

@@ -127,6 +127,12 @@ body {
   grid-row: 12;
 }
 
+.tab-no-bdr-btm {
+  z-index: 1;
+  position: relative;
+  bottom: -1px;
+}
+
 .first-container {
   grid-template-columns: repeat(12, 1fr);
 }

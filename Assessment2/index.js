@@ -36,6 +36,8 @@ function activateTab(activeIndex) {
 
     item.link.style.textDecoration =
       index === activeIndex ? "none" : "underline";
+
+    item.button.classList.toggle("tab-no-bdr-btm", index === activeIndex);
   });
 }
 
