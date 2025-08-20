@@ -33,6 +33,10 @@ body {
   border: 1px solid #b3aeb2;
 }
 
+.bordereds {
+  border: 1px solid #f5f5f5;
+}
+
 .bordered-none {
   border-bottom: none;
 }
@@ -130,7 +134,7 @@ body {
 .tab-no-bdr-btm {
   z-index: 1;
   position: relative;
-  bottom: -1px;
+  bottom: -2px;
 }
 
 .first-container {

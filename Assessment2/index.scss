@@ -48,6 +48,9 @@ body {
 .bordered {
   border: 1px solid $border-color;
 }
+.bordereds {
+  border: 1px solid $s-bg;
+}
 
 .bordered-none {
   border-bottom: none;
@@ -137,7 +140,7 @@ body {
 .tab-no-bdr-btm {
   z-index: 1;
   position: relative;
-  bottom: -1px;
+  bottom: -2px;
 }
 
 // ======================
