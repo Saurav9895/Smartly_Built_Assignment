@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.noborder {
+  border: none;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+%borderscd {
+  border: 1px solid;
+}
+.bordered {
+  @extend %borderscd;
+  border-color: $border-color;
+}
+.bordereds {
+  @extend %borderscd;
+  border-color: $s-bg;
+}
+
+.bordered-none {
+  border-bottom: none;
+}
+
+.border-none-side {
+  border-left: none;
+  border-right: none;
+}
+
+.border-top {
+  border-top: 3px solid $black;
+}
+
+.section-one {
+  padding: 0 10px;
+}
+
+// .f-container-background {
+//   background-color: $f-bg;
+// }
+// .s-container-background {
+//   background-color: $s-bg;
+// }
+
+.mt-neg5 {
+  margin-top: -5px;
+}
+
+.mt-neg8 {
+  margin-top: -8px;
+}
+.mt-neg3 {
+  margin-top: -3px;
+}
+.mt-neg5 {
+  margin-top: -5px;
+}
+.mt-3 {
+  margin-top: 3px;
+}
+
+@for $i from 0 through 6 {
+  .mt-#{$i *5} {
+    margin-top: $i * 5px;
+  }
+}
+
+.ptb {
+  padding: 30px 0;
+}
+
+.pt-all {
+  margin: 10px auto 30px;
+  padding: 25px;
+  max-width: 90%;
+}
+
+.underline-none {
+  text-decoration: none;
+}
+
+.displaying {
+  display: none;
+}
+
+%disp-flex {
+  display: flex;
+  align-items: center;
+}
+.disp-flex-end {
+  @extend %disp-flex;
+  justify-content: end;
+}
+.disp-flex-cen {
+  @extend %disp-flex;
+  justify-content: center;
+}
+.disp-flex-sta {
+  @extend %disp-flex;
+  justify-content: start;
+}
+.disp-flex-col-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.grid-row-12 {
+  grid-row: 12;
+}
+
+.tab-no-bdr-btm {
+  z-index: 1;
+  position: relative;
+  bottom: -2px;
+}
+
+.grid-temp-col {
+  grid-template-columns: repeat(12, 1fr);
+}

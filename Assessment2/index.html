@@ -16,172 +16,194 @@
     <section class="container bordered border-top">
       <!-- Section 1 -->
       <div class="section-one">
-        <div class="grid first-container">
-          <div class="item first-item1">
-            <a class="logo" href="#">Textify</a
-            ><span class="logo-text">Because text Message Rocks</span>
-          </div>
-          <div class="item first-item2">
-            <div class="logout-btn"><a href="#">Logout</a></div>
-          </div>
-          <div class="item first-item3">
-            <h2 class="phone-number">(212) 555-1234</h2>
-          </div>
-          <div class="item first-item4 disp-flex-cen">
-            <a href="">What is this number?</a>
-          </div>
+        <div class="grid first-container grid-temp-col">
+          <a class="item first-item1 text-dark"
+            >Textify
+            <span class="logo-text text-light">Because text Message Rocks</span>
+          </a>
+          <a href="" class="item first-item2 logout-btn text-dark">Logout </a>
+        </div>
+        <div class="grid first-container-2 mt-25 grid-temp-col">
+          <h2 class="item first-item3 phone-number text-dark">
+            (212) 555-1234
+          </h2>
+          <a href="" class="item first-item4 disp-flex-cen mt-neg5 text-light"
+            >What is this number?
+          </a>
         </div>
 
-        <div class="pt-all">
-          <div
-            class="grid second-container container noborder f-container-background pt-all"
+        <div
+          class="grid second-container container noborder f-container-background pt-all grid-temp-col sec-container-bg"
+        >
+          <p class="item1 second-item1 text-dark">To:</p>
+          <select class="item1 second-item2 custom-select">
+            <option value="phone"></option>
+            <option value="email">Email</option>
+          </select>
+          <p class="item1 second-item3 phone_number_or_name text-light-l">
+            << Phone number or name
+          </p>
+          <p class="item1 second-item4 text-dark">Message:</p>
+          <textarea class="item1 second-item5 bordered"></textarea>
+          <a href="" class="item1 second-item6 mt-neg8 text-dark"
+            >Attach a photo to this text message</a
           >
-            <div class="item1 second-item1"><p>To:</p></div>
-            <div class="item1 second-item2">
-              <div class="custom-select">
-                <select>
-                  <option value="phone"></option>
-                  <option value="email">Email</option>
-                </select>
-              </div>
-            </div>
-            <div class="item1 second-item3">
-              <p class="phone_number_or_name"><< Phone number or name</p>
-            </div>
-            <div class="item1 second-item4"><p>Message:</p></div>
-            <div class="item1 second-item5 bordered"><p></p></div>
-            <div class="item1 second-item6 mt-neg8">
-              <a href="">Attach a photo to this text message</a>
-            </div>
-            <div class="item1 second-item7 mt-5">
-              <button class="noborder"><p>Send Text Message</p></button>
-            </div>
-            <div class="item1 second-item8">
-              <span class="first">Or,</span>
-              <a href="" class="second">schedule it for later delivery</a>
-            </div>
+          <button class="item1 second-item7 mt-10 noborder sec-btn-bg">
+            Send Text Message
+          </button>
+          <div class="item1 second-item8">
+            <span class="first text-light-l">Or,</span>
+            <a href="" class="second text-light-l"
+              >schedule it for later delivery</a
+            >
           </div>
         </div>
 
-        <div class="grid third-container grid3 mt25">
-          <div
-            class="item third-item1 background-pink bordereds bordered-none tab-flex"
+        <div class="grid third-container grid3 mt25 grid-temp-col">
+          <button
+            class="item third-item1 background-pink bordered-none bordereds tab-flex"
             id="recent-conversation"
           >
-            <button>
-              <a
-                class="underline-none tab-text-in"
-                href="#recent-conversation"
-                id="recent-conversation-link"
-                >Recent Conversation</a
-              >
-            </button>
-          </div>
-          <div
+            <a
+              class="underline-none tab-text-in"
+              href="#recent-conversation"
+              id="recent-conversation-link"
+              >Recent Conversation</a
+            >
+          </button>
+          <button
             class="item third-item2 background-pink bordereds bordered-none tab-flex"
             id="all-conversations"
           >
-            <button>
-              <a
-                class="underline-none tab-text-in"
-                href="#all-conversations"
-                id="all-conversations-link"
-                >All Conversations</a
-              >
-            </button>
-          </div>
-          <div
+            <a
+              class="underline-none tab-text-in"
+              href="#all-conversations"
+              id="all-conversations-link"
+              >All Conversations</a
+            >
+          </button>
+          <button
             class="item third-item3 background-pink bordereds bordered-none tab-flex"
             id="photos"
           >
-            <button>
-              <a
-                class="underline-none align-center tab-text-in"
-                href="#photos"
-                id="photos-link"
-                >Photos</a
-              >
-            </button>
-          </div>
-          <div class="item third-item4 background-grey disp-flex-end">
-            <a href="">Change Password</a>
-          </div>
+            <a
+              class="underline-none align-center tab-text-in"
+              href="#photos"
+              id="photos-link"
+              >Photos</a
+            >
+          </button>
+          <a href="" class="item third-item4 background-grey disp-flex-end"
+            >Change Password</a
+          >
         </div>
       </div>
 
       <!-- Section 2 -->
       <div class="section-two">
         <div
-          class="grid fourth-container bordered container-background border-none-side bordered-none pt s-container-background"
+          class="grid fourth-container bordered container-background border-none-side bordered-none pt for-container-bg grid-temp-col"
         >
-          <div class="item fourth-item1 display-f-c">
-            <p>(509) 555-1234</p>
-            <a href="">Set a name for this number</a>
+          <p class="item fourth-item1 display-f-c text-dark">
+            (508) 555-1234
+            <a class="text-light" href="">Set a name for this number</a>
+          </p>
+          <div class="item fourth-item2 disp-flex-end">
+            <a href="" class="view-conv text-dark">View All Conversations</a>
+            <span class="view-more-arr text-dark">>></span>
           </div>
-          <div class="item fourth-item2 display-f-c">
-            <a href="" class="view-conv">View All Conversations</a>
-            <a href="" class="view-more-arr">>></a>
-          </div>
-          <div class="item fourth-item3 display-f-c">
-            <p>New Text Message:</p>
-          </div>
-          <div class="item fourth-item4 mt-neg6 bordered"></div>
-          <div class="item fourth-item5 mt-neg6">
-            <button class="display-f-c"><a href="">Send Message</a></button>
-          </div>
+          <p class="item fourth-item3 display-f-c">New Text Message:</p>
+          <textarea class="item fourth-item4 mt-neg6 bordered"></textarea>
+          <button class="item fourth-item5 mt-neg6 display-f-c third-btn-bg">
+            <a class="text-dark" href="">Send Message</a>
+          </button>
           <div class="item fourth-item6 mt-neg6">
-            <a href="" class="attach-photo"> Attach a photo </a>
-            <span>or</span>
-            <a href="">Schedule for later delivery</a>
+            <a href="" class="attach-photo text-dark"> Attach a photo </a>
+            <span class="text-dark">or</span>
+            <a href="" class="text-dark">schedule for later delivery</a>
           </div>
-          <div class="item fourth-item7 display-f-c">
-            <p class="first-msg">
-              You have <span class="first">1 message scheduled </span> for later
-              delivery.
-              <a href="" class="second">Click here to view them.</a>
-            </p>
-          </div>
-          <div class="item fourth-item8 display-f-c msg-dial-left">
-            <p>(508)555-1234</p>
-            <span>Today</span>
-          </div>
-          <div class="item fourth-item9 mt-neg6 msg-box-bg-color msg-arr-left">
-            <p>
-              OMG-I can't wait to see that movie! What theater do you want to go
-              to? Anything down near Union Sq is really best for me.
-            </p>
-          </div>
-          <div class="item fourth-item10 display-f-c msg-dial-right">
-            <p>You - (212) 555-1234</p>
-            <span>Today</span>
-          </div>
-          <div
-            class="item fourth-item11 mt-neg6 msg-box-bg-color msg-arr-right"
+          <p
+            class="item fourth-item7 display-f-c first-msg text-dark third-btn-bg"
           >
-            <p>
-              I'm not really sure what's out. I saw a trailer for The Adjustment
-              Bureau the other day on TV. I thought it looked pretty cool. Plus,
-              you "love" Matt!
-            </p>
-          </div>
-          <div class="item fourth-item12 display-f-c msg-dial-left">
-            <p>(508)555-1234</p>
+            You have <span class="first">1 message scheduled </span> for later
+            delivery .
+            <a href="" class="second text-dark">Click here to view them</a>.
+          </p>
+          <p class="item fourth-item8 display-f-c msg-dial-left">
+            (508)555-1234
+
             <span>Today</span>
-          </div>
-          <div class="item fourth-item13 mt-neg3 msg-box-bg-color msg-arr-left">
-            <p>A movie sounds perfect. What did you have in mind?</p>
-          </div>
-          <div class="item fourth-item14">
-            <p class="first">Load More messages</p>
-            <p class="second">
+          </p>
+          <p
+            class="item fourth-item9 mt-neg6 msg-box msg-arr-left message-text"
+          >
+            OMG-I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
+          <p class="item fourth-item10 display-f-c msg-dial-right">
+            You - (212) 555-1234
+            <span>Today</span>
+          </p>
+          <p
+            class="item fourth-item11 mt-neg6 msg-box msg-arr-right message-text"
+          >
+            I'm not really sure what's out. I saw a trailer for The Adjustment
+            Bureau the other day on TV. I thought it looked pretty cool. Plus,
+            you "love" Matt!
+          </p>
+          <p class="item fourth-item12 display-f-c msg-dial-left">
+            (508)555-1234
+            <span>Today</span>
+          </p>
+          <p
+            class="item fourth-item13 mt-neg3 msg-box msg-arr-left message-text"
+          >
+            A movie sounds perfect. What did you have in mind?
+          </p>
+          <p class="item fourth-item14 display-f-c msg-dial-right">
+            You - (212) 555-1234
+            <span>Today</span>
+          </p>
+          <p
+            class="item fourth-item11 mt-neg6 msg-box msg-arr-right message-text"
+          >
+            I'm not really sure what's out. I saw a trailer for The Adjustment
+            Bureau the other day on TV. I thought it looked pretty cool. Plus,
+            you "love" Matt!
+          </p>
+
+          <p class="item fourth-item12 display-f-c msg-dial-left">
+            (508)555-1234
+            <span>About 3 Weeks Ago</span>
+          </p>
+          <p
+            class="item fourth-item13 mt-neg3 msg-box msg-arr-left message-text"
+          >
+            A movie sounds perfect. What did you have in mind?
+          </p>
+
+          <p class="item fourth-item15 display-f-c msg-dial-right">
+            You - (212) 555-1234
+            <span>About 3 Weeks Ago</span>
+          </p>
+          <p
+            class="item fourth-item11 mt-neg6 msg-box msg-arr-right message-text"
+          >
+            I'm not really sure what's out. I saw a trailer for The Adjustment
+            Bureau the other day on TV. I thought it looked pretty cool. Plus,
+            you "love" Matt!
+          </p>
+          <div class="item fourth-item20 ptb third-btn-bg">
+            <a href="" class="first text-dark">Load More Messages</a>
+            <p class="second text-dark">
               There are 217 More messages in this conversation
             </p>
           </div>
         </div>
         <div
-          class="grid fourth-container bordered container-background border-none-side bordered-none pt s-container-background displaying"
+          class="grid fourth-container bordered container-background border-none-side bordered-none pt for-container-bg displaying"
         >
-          <div class="tab-head">
+          <div class="tab-head text-dark">
             <h2>Top Conversations</h2>
             <hr />
           </div>
@@ -189,11 +211,11 @@
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">(508) 555-1234</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">(508) 555-1234</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
           <div class="item fourth-second-tab-item2 sec-tab-msg arr">
-            <p>
+            <p class="text-dark">
               <span>New</span>OMG - I can't wait to see that movie! What theater
               do you want to go to? Anything down near Union Sq is really best
               for me.
@@ -202,40 +224,40 @@
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">Sarah Kelly</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">Sarah Kelly</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
-          <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
-              OMG - I can't wait to see that movie! What theater do you want to
-              go to? Anything down near Union Sq is really best for me.
-            </p>
-          </div>
+          <p
+            class="item fourth-second-tab-item2 sec-tab-msg fourth-second-tab-pg text-dark"
+          >
+            OMG - I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">Luke Jones</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">Luke Jones</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
-          <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
-              OMG - I can't wait to see that movie! What theater do you want to
-              go to? Anything down near Union Sq is really best for me.
-            </p>
-          </div>
+          <p
+            class="item fourth-second-tab-item2 sec-tab-msg fourth-second-tab-pg text-dark"
+          >
+            OMG - I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
 
-          <div class="tab-head">
+          <div class="tab-head text-dark">
             <h2>All Conversations</h2>
             <hr />
           </div>
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">(508) 555-1234</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">(508) 555-1234</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
           <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
+            <p class="text-dark">
               <span>New</span>OMG - I can't wait to see that movie! What theater
               do you want to go to? Anything down near Union Sq is really best
               for me.
@@ -244,11 +266,11 @@
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">(508) 555-1234</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">(508) 555-1234</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
           <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
+            <p class="text-dark">
               <span>New</span>OMG - I can't wait to see that movie! What theater
               do you want to go to? Anything down near Union Sq is really best
               for me.
@@ -257,35 +279,11 @@
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">Sarah Kelly</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">(508) 555-1234</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
           <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
-              OMG - I can't wait to see that movie! What theater do you want to
-              go to? Anything down near Union Sq is really best for me.
-            </p>
-          </div>
-          <div
-            class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
-          >
-            <a href="" class="phone-number">Luke Jones</a>
-            <p class="msg-count">233 Messages</p>
-          </div>
-          <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
-              OMG - I can't wait to see that movie! What theater do you want to
-              go to? Anything down near Union Sq is really best for me.
-            </p>
-          </div>
-          <div
-            class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
-          >
-            <a href="" class="phone-number">(508) 555-1234</a>
-            <p class="msg-count">233 Messages</p>
-          </div>
-          <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
+            <p class="text-dark">
               <span>New</span>OMG - I can't wait to see that movie! What theater
               do you want to go to? Anything down near Union Sq is really best
               for me.
@@ -294,94 +292,186 @@
           <div
             class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
           >
-            <a href="" class="phone-number">Luke Jones</a>
-            <p class="msg-count">233 Messages</p>
+            <a href="" class="phone-number text-dark">Sarah Kelly</a>
+            <p class="msg-count text-light">233 Messages</p>
+          </div>
+          <p
+            class="item fourth-second-tab-item2 sec-tab-msg fourth-second-tab-pg text-dark"
+          >
+            OMG - I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
+          <div
+            class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
+          >
+            <a href="" class="phone-number text-dark">Luke Jones</a>
+            <p class="msg-count text-light">233 Messages</p>
+          </div>
+          <p
+            class="item fourth-second-tab-item2 sec-tab-msg fourth-second-tab-pg text-dark"
+          >
+            OMG - I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
+
+          <div
+            class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
+          >
+            <a href="" class="phone-number text-dark">(508) 555-1234</a>
+            <p class="msg-count text-light">233 Messages</p>
           </div>
           <div class="item fourth-second-tab-item2 sec-tab-msg">
-            <p>
-              OMG - I can't wait to see that movie! What theater do you want to
-              go to? Anything down near Union Sq is really best for me.
+            <p class="text-dark">
+              <span>New</span>OMG - I can't wait to see that movie! What theater
+              do you want to go to? Anything down near Union Sq is really best
+              for me.
             </p>
           </div>
+          <div
+            class="item fourth-second-tab-item1 sec-tab-m-c-sec disp-flex-col-end"
+          >
+            <a href="" class="phone-number text-dark">Luke Jones</a>
+            <p class="msg-count text-light">233 Messages</p>
+          </div>
+          <p
+            class="item fourth-second-tab-item2 sec-tab-msg fourth-second-tab-pg text-dark"
+          >
+            OMG - I can't wait to see that movie! What theater do you want to go
+            to? Anything down near Union Sq is really best for me.
+          </p>
         </div>
         <div
-          class="grid fourth-container bordered container-background border-none-side bordered-none pt s-container-background displaying grid-gap"
+          class="grid fourth-container bordered container-background border-none-side bordered-none pt for-container-bg displaying grid-gap"
         >
-          <div class="tab-head">
+          <div class="tab-head text-dark">
             <h2>Photos From All Conversations</h2>
             <hr />
           </div>
-          <div class="grid-card-width photo-card photo-card1 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card1 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card2 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card2 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>Sarah Kelly</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card3 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card3 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card4 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card4 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card1 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card1 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card2 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card2 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card3 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card3 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card4 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card4 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card1 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card1 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card2 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card2 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card3 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card3 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
           </div>
-          <div class="grid-card-width photo-card photo-card4 grid-pd-bg-color">
-            <img src="photo.jpg" alt="" />
+          <div
+            class="grid-card-width photo-card photo-card4 grid-pd-bg-color bordered"
+          >
+            <div class="img-cont">
+              <img src="photo.jpg" alt="" />
+            </div>
             <p>(508) 555-1234</p>
             <span>Sent on 03/01/2011</span>
+          </div>
+          <div class="item fourth-item20 ptb third-btn-bg">
+            <a href="" class="first text-dark">Load More Photos</a>
+            <p class="second text-dark">
+              There are 93 More photos across 7 conversations
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section 3 -->
-    <div class="grid section-three">
-      <div class="item fifth-item1"><p>Textify © 2011</p></div>
-      <div class="item fifth-item2">
-        <p>All text messaging data in this site is kept 100% secure -</p>
-        <span>read our security policy</span>
-      </div>
+    <div class="grid section-three grid-temp-col">
+      <p class="item fifth-item1">Textify © 2011</p>
+      <p class="item fifth-item2">
+        All text messaging data in this site is kept 100% secure -
+        <a href=""> read our security policy</a>
+      </p>
     </div>
 
     <script src="index.js"></script>
