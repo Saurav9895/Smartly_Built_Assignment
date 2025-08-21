@@ -726,8 +726,20 @@ body {
   .fourth-container .fourth-item11 {
     grid-column: 2/13;
   }
+  .fourth-container .fourth-item12 {
+    grid-column: 1/12;
+  }
   .fourth-container .fourth-item13 {
     grid-column: 1/12;
+  }
+  .fourth-container .fourth-item14 {
+    grid-row: 13;
+  }
+  .fourth-container .fourth-item-13-2 {
+    grid-row: 16;
+  }
+  .fourth-container .fourth-item15 {
+    grid-row: 17;
   }
   .fourth-container .fourth-item20 .first {
     text-align: center;
@@ -737,6 +749,9 @@ body {
     text-align: center;
   }
   .tab-head h2 {
+    font-size: 18px;
+  }
+  .fourth-container-3 .tab-head h2 {
     font-size: 18px;
   }
   .fourth-second-tab-item1 {
@@ -804,6 +819,9 @@ body {
     font-size: 10px;
   }
   .tab-head h2 {
+    font-size: 16px;
+  }
+  .fourth-container-3 .tab-head h2 {
     font-size: 16px;
   }
   .photocardmb {

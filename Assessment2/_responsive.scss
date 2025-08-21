@@ -135,9 +135,23 @@
     .fourth-item11 {
       grid-column: 2/13;
     }
-
+    .fourth-item12 {
+      grid-column: 1/12;
+    }
+    // .fourth-item12-2 {
+    //   grid-column: 1/12;
+    // }
     .fourth-item13 {
       grid-column: 1/12;
+    }
+    .fourth-item14 {
+      grid-row: 13;
+    }
+    .fourth-item-13-2 {
+      grid-row: 16;
+    }
+    .fourth-item15 {
+      grid-row: 17;
     }
     .fourth-item20 {
       .first {
@@ -153,6 +167,14 @@
   .tab-head {
     h2 {
       font-size: 18px;
+    }
+  }
+
+  .fourth-container-3 {
+    .tab-head {
+      h2 {
+        font-size: 18px;
+      }
     }
   }
 
@@ -243,6 +265,14 @@
   .tab-head {
     h2 {
       font-size: 16px;
+    }
+  }
+
+  .fourth-container-3 {
+    .tab-head {
+      h2 {
+        font-size: 16px;
+      }
     }
   }
   .photocardmb {
