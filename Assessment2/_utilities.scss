@@ -170,3 +170,26 @@ body {
 .gridcol1-13 {
   grid-column: 1/13;
 }
+
+.fourth-item20 {
+  grid-column: 3/11;
+  height: 55px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  .first {
+    font-size: 16px;
+  }
+
+  .second {
+    font-size: 12px;
+  }
+}
+
+.grid-col-3-11 {
+  grid-column: 3/11;
+}
