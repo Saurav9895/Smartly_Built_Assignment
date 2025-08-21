@@ -32,13 +32,17 @@ body {
 %borderscd {
   border: 1px solid;
 }
-.bordered {
+@mixin bordered($color) {
   @extend %borderscd;
-  border-color: $border-color;
+  border-color: $color;
 }
+
+.bordered {
+  @include bordered($border-color);
+}
+
 .bordereds {
-  @extend %borderscd;
-  border-color: $s-bg;
+  @include bordered($s-bg);
 }
 
 .bordered-none {
@@ -106,22 +110,24 @@ body {
   display: none;
 }
 
-%disp-flex {
+@mixin disp-flex($justify: flex-start, $align: center) {
   display: flex;
-  align-items: center;
+  align-items: $align;
+  justify-content: $justify;
 }
+
 .disp-flex-end {
-  @extend %disp-flex;
-  justify-content: end;
+  @include disp-flex(end);
 }
+
 .disp-flex-cen {
-  @extend %disp-flex;
-  justify-content: center;
+  @include disp-flex(center);
 }
+
 .disp-flex-sta {
-  @extend %disp-flex;
-  justify-content: start;
+  @include disp-flex(start);
 }
+
 .disp-flex-col-end {
   display: flex;
   flex-direction: column;
@@ -140,4 +146,27 @@ body {
 
 .grid-temp-col {
   grid-template-columns: repeat(12, 1fr);
+}
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+.fontweight {
+  @include font-weight(bold);
+}
+
+.fontweight500 {
+  @include font-weight(500);
+}
+
+.textarearesizenone {
+  resize: none;
+}
+
+.textalignright {
+  text-align: right;
+}
+
+.gridcol1-13 {
+  grid-column: 1/13;
 }

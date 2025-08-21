@@ -1,9 +1,7 @@
 .first-container {
   .first-item1 {
     grid-column: 1/8;
-    font-weight: bold;
     font-size: 18px;
-    text-decoration: none;
 
     .logo-text {
       font-size: 16px;
@@ -13,6 +11,5 @@
   }
   .first-item2 {
     grid-column: 11/13;
-    text-align: right;
   }
 }

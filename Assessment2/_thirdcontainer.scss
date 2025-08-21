@@ -8,8 +8,6 @@
     a {
       font-size: 11px;
       color: $text-dark;
-      text-decoration: none;
-      font-weight: bold;
     }
   }
   .tab-flex {
@@ -30,9 +28,5 @@
     grid-column: 11/14;
     background-color: $white;
     font-size: 11px;
-
-    color: $text-dark;
-    text-decoration: underline;
-    padding-top: 5px;
   }
 }
