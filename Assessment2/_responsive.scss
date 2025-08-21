@@ -106,9 +106,7 @@
     .fourth-item5 {
       grid-column: 9/13;
     }
-    // .fourth-item6 {
-    //   grid-column: 1/13;
-    // }
+
     .fourth-item7 {
       // justify-content: center;
       padding: 5px;
@@ -137,14 +135,11 @@
     .fourth-item11 {
       grid-column: 2/13;
     }
-    .fourth-item12 {
-      // grid-column: 1/13;
-    }
+
     .fourth-item13 {
       grid-column: 1/12;
     }
     .fourth-item20 {
-      // grid-column: 1/13;
       .first {
         text-align: center;
         margin-top: 5px;
@@ -162,7 +157,6 @@
   }
 
   .fourth-second-tab-item1 {
-    // grid-column: 1/13;
     align-self: center;
     display: flex;
     justify-content: start;
