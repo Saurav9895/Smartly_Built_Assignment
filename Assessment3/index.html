@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tick and Load</h1>
+
+      <h2>Countdown</h2>
+      <input type="text" id="timeInput" placeholder="HH:MM:SS" />
+      <br />
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="resetBtn" disabled>Reset</button>
+      <button id="cancelBtn" disabled>Cancel</button>
+
+      <h2 class="p-h">Progress</h2>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
