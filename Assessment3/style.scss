@@ -1,0 +1,126 @@
+$primary-color: #02575e;
+$border-color: #ccc;
+$bg-light: #f0f0f0;
+$bg-hover: #ddd;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid $border-color;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: $shadow;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid $border-color;
+  background: $bg-light;
+  margin: 5px;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $bg-hover;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.p-h {
+  margin-top: 30px;
+}
+
+.progress-container {
+  width: 100%;
+  background: #eee;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 25px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: $primary-color;
+  transition: width 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+
+  span {
+    position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

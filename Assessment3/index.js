@@ -4,6 +4,7 @@ let pauseBtn = document.getElementById("pauseBtn");
 let resetBtn = document.getElementById("resetBtn");
 let cancelBtn = document.getElementById("cancelBtn");
 let progressBar = document.getElementById("progressBar");
+let progressText = document.getElementById("progressText");
 
 let timer;
 let totalTime = 0;
@@ -11,15 +12,13 @@ let timeLeft = 0;
 let isPaused = false;
 
 function parseTime(str) {
-  let split = str.split(":");
+  const regex = /^(\d+):([0-5]\d):([0-5]\d)$/;
+  const match = str.match(regex);
+  if (!match) return NaN;
 
-  if (split.length !== 3) return NaN;
-
-  let hours = Number(split[0]);
-  let mins = Number(split[1]);
-  let secs = Number(split[2]);
-
-  if (isNaN(hours) || isNaN(mins) || isNaN(secs)) return NaN;
+  let hours = Number(match[1]);
+  let mins = Number(match[2]);
+  let secs = Number(match[3]);
 
   return hours * 3600 + mins * 60 + secs;
 }
@@ -28,7 +27,6 @@ function formatTime(seconds) {
   let hours = Math.floor(seconds / 3600);
   let mins = Math.floor((seconds % 3600) / 60);
   let secs = seconds % 60;
-
   let h = String(hours).padStart(2, "0");
   let m = String(mins).padStart(2, "0");
   let s = String(secs).padStart(2, "0");
@@ -36,17 +34,31 @@ function formatTime(seconds) {
   return h + ":" + m + ":" + s;
 }
 
+function updateProgress(percent) {
+  progressBar.style.width = percent + "%";
+  progressText.textContent = Math.floor(percent) + "%";
+}
+
+function enableStartState() {
+  startBtn.disabled = false;
+  pauseBtn.disabled = true;
+  resetBtn.disabled = true;
+  cancelBtn.disabled = true;
+  pauseBtn.innerText = "Pause";
+  progressBar.style.width = "0%";
+  progressText.textContent = "0%";
+}
+
 startBtn.addEventListener("click", function () {
-  if (!timeLeft || timeInput.value.includes(":")) {
-    totalTime = parseTime(timeInput.value);
-    if (isNaN(totalTime) || totalTime <= 0) {
-      alert("Please enter time in HH:MM:SS format");
-      return;
-    }
-    timeLeft = totalTime;
+  totalTime = parseTime(timeInput.value);
+  if (isNaN(totalTime) || totalTime <= 0) {
+    alert("Please enter time in HH:MM:SS format");
+    return;
   }
+  timeLeft = totalTime;
 
   isPaused = false;
+  startBtn.disabled = true;
   pauseBtn.disabled = false;
   resetBtn.disabled = false;
   cancelBtn.disabled = false;
@@ -58,15 +70,20 @@ startBtn.addEventListener("click", function () {
       if (timeLeft <= 0) {
         clearInterval(timer);
         timeInput.value = "00:00:00";
-        progressBar.style.width = "100%";
-        alert("Time's up!");
+        updateProgress(100);
+
+        setTimeout(() => {
+          alert("Time's up!");
+          enableStartState();
+        }, 200);
+
         return;
       }
       timeLeft--;
       timeInput.value = formatTime(timeLeft);
 
       let percent = ((totalTime - timeLeft) / totalTime) * 100;
-      progressBar.style.width = percent + "%";
+      updateProgress(percent);
     }
   }, 1000);
 });
@@ -80,8 +97,8 @@ resetBtn.addEventListener("click", function () {
   clearInterval(timer);
   timeLeft = totalTime;
   timeInput.value = formatTime(timeLeft);
-  progressBar.style.width = "0%";
-  pauseBtn.innerText = "Pause";
+  updateProgress(0);
+  enableStartState();
 });
 
 cancelBtn.addEventListener("click", function () {
@@ -89,9 +106,6 @@ cancelBtn.addEventListener("click", function () {
   timeLeft = 0;
   totalTime = 0;
   timeInput.value = "";
-  progressBar.style.width = "0%";
-  pauseBtn.disabled = true;
-  resetBtn.disabled = true;
-  cancelBtn.disabled = true;
-  pauseBtn.innerText = "Pause";
+  updateProgress(0);
+  enableStartState();
 });
